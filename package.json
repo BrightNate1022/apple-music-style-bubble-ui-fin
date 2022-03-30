@@ -624,8 +624,8 @@
       "integrity": "sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k="
     },
     "engines" : { 
-      "npm" : ">=7.0.0",
-      "node" : ">=16.0.0"
+      "npm" : "7.0.0",
+      "node" : "16.0.0"
     },
     "es-abstract": {
       "version": "1.19.1",
