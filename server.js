@@ -2,6 +2,7 @@ var mysql = require('mysql');
 var express = require('express');
 const path = require('path')
 var fs = require('fs')
+const PORT= process.env.PORT|| 5000;
 // var index = require("index.html")
 app = express();
 app.get('/',(request,response)=>{
@@ -11,7 +12,7 @@ app.get('/',(request,response)=>{
   });
   
   //Binding the server to a port(3000)
-  app.listen(process.env.PORT || 5000,()=>console.log("express server started at port 69000"));
+  app.listen( PORT,()=>console.log("express server started at port 69000"));
 
 var con = mysql.createConnection({
   host: "us-cdbr-east-05.cleardb.net",
