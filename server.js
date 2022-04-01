@@ -3,7 +3,12 @@ var express = require('express');
 const path = require('path')
 var fs = require('fs')
 // var index = require("index.html")
-app = express();
+app = express()
+.use(express.static(path.join(__dirname, 'public')))
+  .set('views', path.join(__dirname, 'views'))
+  .set('view engine', 'ejs')
+  .get('/', (req, res) => res.render('pages/index'))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`));
 app.get('/',(request,response)=>{
     ;
     response.sendFile(path.join(__dirname, '/index.html'));
@@ -11,8 +16,10 @@ app.get('/',(request,response)=>{
   });
   
   //Binding the server to a port(3000)
-  app.listen(5000,()=>console.log("express server started at port 3000"));
-
+  // app.listen(5000,()=>console.log("express server started at port 3000"));
+ 
+  
+  
 var con = mysql.createConnection({
   host: "us-cdbr-east-05.cleardb.net",
   user: "b4b4d8ef46396f",
