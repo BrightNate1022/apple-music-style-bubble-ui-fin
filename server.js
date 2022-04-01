@@ -16,7 +16,7 @@ app.get('/',(request,response)=>{
 var con = mysql.createConnection({
   host: "us-cdbr-east-05.cleardb.net",
   user: "b4b4d8ef46396f",
-  password: "7aea24f",
+  password: "7aea24f7",
   database: "heroku_bd64a8a37828abf"
 });
 
