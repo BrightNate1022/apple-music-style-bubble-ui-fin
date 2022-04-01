@@ -14,10 +14,10 @@ app.get('/',(request,response)=>{
   app.listen(5000,()=>console.log("express server started at port 3000"));
 
 var con = mysql.createConnection({
-  host: "localhost",
-  user: "Nate",
-  password: "Black1022!",
-  database: "new_schema"
+  host: "us-cdbr-east-05.cleardb.net",
+  user: "b963ed0e99b7f1",
+  password: "3dd81de4!",
+  database: "heroku_4042fa7c8cf50be"
 });
 
 
