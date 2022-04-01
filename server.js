@@ -11,7 +11,7 @@ app.get('/',(request,response)=>{
   });
   
   //Binding the server to a port(3000)
-  app.listen(3000,()=>console.log("express server started at port 3000"));
+  app.listen(5000,()=>console.log("express server started at port 3000"));
 
 var con = mysql.createConnection({
   host: "localhost",
