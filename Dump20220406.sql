@@ -38,7 +38,7 @@ CREATE TABLE `test` (
 
 LOCK TABLES `test` WRITE;
 /*!40000 ALTER TABLE `test` DISABLE KEYS */;
-INSERT INTO `test` VALUES (1,'Pop','assets\\pop.png'),(2,'Alternative',''),(3,'Rock','assets\\rock.png'),(4,'Jazz',NULL),(5,'Hits',NULL),(6,'Dance',NULL),(7,'Metal',NULL),(8,'Experimental',NULL),(9,'Rap','assets\\rap.jpg'),(10,'Electronic',NULL),(11,'Punk',NULL);
+INSERT INTO `test` VALUES (1,'Sagar','assets\\pop.png'),(2,'Sam','assets\\Dishonored.jpg'),(3,'Mehul','assets\\rock.png'),(4,'Smith','assets\\gaming-deadpool-box-art.jpg'),(5,'Jhon','assets\\images (1).jpg'),(6,'Manuel','assets\\images.jpg'),(7,'Abhishek','assets\\rap.jpg'),(8,'Smidth','assets\\RDR-box-art-360.jpg');
 /*!40000 ALTER TABLE `test` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-03-30 16:15:28
+-- Dump completed on 2022-04-06 18:08:24

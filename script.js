@@ -16,7 +16,7 @@ var nodes = new vis.DataSet([
     {
     var namest= obj[i]
     names.push(namest.Name)
-     nodes.add({label:names[i],id:i,shape: "circularImage", image:img[i]})
+     nodes.add({label:names[i],id:i,shape: "diamond", image:img[i]})
     console.log(namest.Name)
     
     console.log(nodes.get[0])
