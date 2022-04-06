@@ -1,2 +1,2 @@
 web:node server.js
-worker: heroku restart
+worker: restart
