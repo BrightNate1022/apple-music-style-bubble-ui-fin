@@ -14,7 +14,7 @@ app.get('/',(request,response)=>{
   //Binding the server to a port(3000)
   app.listen( PORT,()=>console.log("express server started at port 69000"));
 
-var con = mysql.createConnection({
+var con = mysql.createPool({
   host: "us-cdbr-east-05.cleardb.net",
   user: "b4b4d8ef46396f",
   password: "7aea24f7",
@@ -23,7 +23,7 @@ var con = mysql.createConnection({
 
 
 var nameb = {};
-con.connect(function(err) {
+con.getConnection(function(err) {
     if (err) throw err;
     console.log("Connected!");
 con.query("SELECT Name FROM test", function (err, result) {
