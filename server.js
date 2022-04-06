@@ -2,6 +2,8 @@ var mysql = require('mysql');
 var express = require('express');
 const path = require('path')
 var fs = require('fs')
+const Heroku = require('heroku-client')
+const heroku = new Heroku({ token: process.env.0ef1144d-e625-4faa-9e1f-8a56c411df48 })
 const PORT= process.env.PORT|| 5000;
 // var index = require("index.html")
 app = express();
@@ -48,4 +50,5 @@ con.query("SELECT Name FROM test", function (err, result) {
   });
   });
 });
+heroku.apps('my-app').dynos().restartAll()
 module.exports = con;
