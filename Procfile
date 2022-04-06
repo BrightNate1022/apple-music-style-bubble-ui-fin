@@ -1,2 +1,2 @@
 web:node server.js
-worker:
+worker: command_to_run_your_worker
